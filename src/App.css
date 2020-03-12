@@ -1,0 +1,127 @@
+body {
+    background-color: rgb(240, 236, 236);
+}
+
+.app-container {
+    background-color: rgba(192,192,192,0.3);
+    min-height: 500px;
+    width: 400px;
+    margin: 40px auto;
+    border-radius: 10px;
+    border: 5px solid rgb(147, 147, 190);
+}
+
+.input-container input {
+    background-color: khaki;
+    border: 0;
+    width: 200px;
+    height: 50px;
+    padding: 0 20px;
+    margin: 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    color: black;
+}
+
+.input-container input::placeholder {
+    color: gray;
+}
+
+.input-container input:focus, .input-container button:focus {
+    outline: none;
+}
+
+.input-container button {
+    height: 30px;
+    width: 80px;
+    border-radius: 5px;
+    border: 0;
+    background-color: yellow;
+    cursor: pointer;
+    font-weight: bolder;
+    color: black;
+}
+
+.item-container {
+    position: center;
+    color: white;
+    width: 300px;
+    background-color: grey;
+    height: 40px;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+.item-container p {
+    padding: 10px;
+    position: relative;
+}
+
+.item-container .edit-btn {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.item-container .delete-btn {
+    position: absolute;
+    right: 35px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.list-container .clear-btn {
+    height: 30px;
+    width: 300px;
+    border-radius: 5px;
+    border: 0;
+    background-color: rgba(0, 217, 255, 0.938);
+    cursor: pointer;
+    font-weight: bolder;
+    color: black;
+    margin: 20px;
+}
+/*
+.clear-btn {
+    background-color:teal;
+    border: inherit;
+    width: 300px;
+    height: 30px;
+}
+
+.add-item-btn {
+    background-color: red;
+    width: 300px;
+    height: 30px;
+}
+
+.edit-item-btn {
+    background-color: green;
+    width: 300px;
+    height: 30px;
+}
+
+.input-container {
+    text-align: center;
+}
+
+.list-container {
+    text-align: center;
+}
+
+.list-header {
+    text-align: center;
+}
+
+.item-container {
+    width: 100%;
+    text-align: center;
+}
+
+.title-display {
+    float: center;
+    width: 70px;
+    text-align: left;
+}
+*/
