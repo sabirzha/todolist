@@ -8,7 +8,7 @@ body {
     width: 400px;
     margin: 40px auto;
     border-radius: 10px;
-    border: 5px solid rgb(147, 147, 190);
+    border: 5px solid none;
 }
 
 .input-container input {
@@ -32,18 +32,17 @@ body {
 }
 
 .input-container button {
-    height: 30px;
-    width: 80px;
-    border-radius: 5px;
-    border: 0;
-    background-color: yellow;
-    cursor: pointer;
-    font-weight: bolder;
-    color: black;
+    padding: 10px;
+    font-size: 16px;
+    margin: 10px;
+    margin-right: 0px;
+    background-color: #0066FF;
+    color: #FFF;
+    border: 2px solid #0066FF;
 }
 
 .item-container {
-    position: center;
+    padding-right: 100px;
     color: white;
     width: 300px;
     background-color: grey;
@@ -59,17 +58,121 @@ body {
 
 .item-container .edit-btn {
     position: absolute;
-    right: 10px;
+    right: -40px;
     cursor: pointer;
     font-size: 15px;
 }
 
 .item-container .delete-btn {
     position: absolute;
-    right: 35px;
+    right:-75px;
     cursor: pointer;
     font-size: 15px;
 }
+
+.list-container {
+    display: flex;
+    justify-content: right;
+}
+
+.list-container .clear-btn {
+    height: 30px;
+    width: 200px;
+    border-radius: 5px;
+    border: 0;
+    background-color: rgba(0, 217, 255, 0.938);
+    cursor: pointer;
+    font-weight: bolder;
+    color: black;
+    margin-right: 100px;
+    visibility: hidden;
+}
+
+
+
+
+
+
+/*
+
+body {
+    background-color: rgb(240, 236, 236);
+    padding: 50px;
+    font-family: sans-serif;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+}
+
+.input-container input {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #FFF;
+    width: 165px;
+}
+
+.input-container input::placeholder {
+    color: gray;
+}
+
+.input-container input:focus, .input-container button:focus {
+    outline: none;
+}
+
+.input-container button {
+    padding: 10px;
+    font-size: 16px;
+    margin: 10px;
+    margin-right: 0px;
+    background-color: #0066FF;
+    color: #FFF;
+    border: 2px solid #0066FF;
+}
+
+.input-container button:hover {
+    background-color: #003399;
+    border: 2px solid #003399;
+    cursor: pointer;
+}
+
+.list-container {
+    list-style: none;
+    padding-left: 0;
+    width: 350px;
+}
+
+.item-container p {
+    color: #333;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    list-style: none;
+}
+
+.item-container .edit-btn {
+    position: absolute;
+    cursor: pointer;
+    font-size: 15px;
+    padding-left: 60px;
+}
+
+.item-container .delete-btn {
+    position: absolute;
+    cursor: pointer;
+    font-size: 15px;
+    padding-left: 80px;
+}
+*/
+
+/*
+.item-container p {
+    padding: 10px;
+    position: relative;
+}
+
+
 
 .list-container .clear-btn {
     height: 30px;
@@ -82,13 +185,7 @@ body {
     color: black;
     margin: 20px;
 }
-/*
-.clear-btn {
-    background-color:teal;
-    border: inherit;
-    width: 300px;
-    height: 30px;
-}
+
 
 .add-item-btn {
     background-color: red;

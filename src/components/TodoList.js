@@ -5,8 +5,8 @@ export default class TodoList extends Component {
   render() {
     const {items, clearList, handleDelete, handleEdit} = this.props
     return (
-      <ul className="list-group">
-        <div className='list-container'>
+      <div className="list-container">
+        <ul className='list-list'>
         {
             items.map(item => {
                 return (
@@ -25,8 +25,8 @@ export default class TodoList extends Component {
           onClick={clearList}>
             clear
         </button>
-        </div>
-      </ul>
+        </ul>
+      </div>
     )
   }
 }
