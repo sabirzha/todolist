@@ -1,0 +1,24 @@
+.item-container  {
+    background-color: grey;
+    text-align: center;
+    padding: .2em;
+    position: relative;
+    height: 40px;
+  
+    line-height: 40px;
+   
+  }
+
+.item-container .edit-btn {
+    margin: 0;
+    position: absolute;
+    top: .5em;
+    right: 2.9em;
+}
+
+.item-container .delete-btn {
+    margin: 0;
+    position: absolute;
+    top: .5em;
+    right: 0.9em;
+}

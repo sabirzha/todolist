@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import './TodoInput.css';
 
 export default class TodoInput extends Component {
   render() {
@@ -8,18 +9,14 @@ export default class TodoInput extends Component {
           <form onSubmit={handleSubmit}>
               <input 
                 type="text" 
-                className="input" 
+                className="input-el" 
                 placeholder="add a new task"
                 value={item}
                 onChange={handleChange}
                 />
             <button 
                 type="submit" 
-                className= {
-                    editItem 
-                        ? "add-item-btn"
-                        : "edit-item-btn"
-                }>
+                className="input-el" >
                     {editItem ? 'Edit Item' : 'Add Item'}
             </button>
           </form>

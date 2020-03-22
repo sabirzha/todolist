@@ -1,0 +1,35 @@
+.input-container {
+    max-width: 400px;
+    margin: 1.0em  auto;
+    justify-content: center;
+    display: flex;
+    padding: .5em;
+    background-color: #5f4b44;
+    list-style-type: none;
+    border-radius: .2em;
+  }
+  
+
+.input-container input {
+    background-color: khaki;
+    width: 200px;
+    height: 40px;
+    padding: 0 .5em;
+    font-size: 18px;
+    color: black;
+}
+
+.input-container button {
+    padding: .3em;
+    font-size: 18px;
+    margin: 10px;
+    margin-right: 0px;
+    background-color: #0066FF;
+    color: #FFF;
+    border: 2px solid #0066FF;
+}
+
+/* Space between the elemens in the input panel */
+.input-container .input-el + .input-el  {
+    margin-left: 2.5em;
+}

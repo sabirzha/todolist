@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import TodoItem from './TodoItem';
+import './TodoList.css';
 
 export default class TodoList extends Component {
   render() {
     const {items, clearList, handleDelete, handleEdit} = this.props
     return (
       <div className="list-container">
-        <ul className='list-list'>
+       
         {
             items.map(item => {
                 return (
@@ -23,9 +24,9 @@ export default class TodoList extends Component {
           type="button" 
           className="clear-btn"
           onClick={clearList}>
-            clear
+            Clear
         </button>
-        </ul>
+      
       </div>
     )
   }

@@ -1,0 +1,20 @@
+.list-container {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+/* Space between todo records  in the item list */
+.item-container  + .item-container   {
+    margin-bottom:  .5em;
+}
+
+.clear-btn {
+    position: relative;
+    min-width: 100px;
+    margin-bottom: 0.75em;
+    padding: .3em;
+    font-size: 18px;
+    background-color: #0066FF;
+    color: #FFF;
+    border: 2px solid #0066FF;
+}

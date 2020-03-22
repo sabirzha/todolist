@@ -3,6 +3,7 @@ import { IconContext } from "react-icons";
 
 import { MdEdit } from 'react-icons/md';
 import { MdDelete } from 'react-icons/md';
+import './TodoItem.css';
 
 export default class TodoItem extends Component {
   render() {
