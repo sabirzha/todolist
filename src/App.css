@@ -1,22 +1,55 @@
-body {
-    background-color: rgb(240, 236, 236);
-}
+
+/* This is a common(generic) step recommended for each web design
+ ..see CSS in Depth book Chapter 3 probably.. Beginning of the step */
+
+:root {
+    box-sizing: border-box;
+  }
+
+  *,
+  ::before,
+  ::after {
+    box-sizing: inherit;
+  }
+
+  body {
+    background-color: #709b90;
+    font-family: Helvetica, Arial, sans-serif;
+  }
+
+  body * + * {
+    margin-top: 1.5em;
+  }
+
+/* End of the common step */
+
+
 
 .app-container {
     background-color: rgba(192,192,192,0.3);
-    min-height: 500px;
-    width: 400px;
-    margin: 40px auto;
-    border-radius: 10px;
-    border: 5px solid none;
+    max-width: 400px;
+    margin: 0 auto;
 }
+
+
+.input-container {
+    max-width: 400px;
+    margin: 1.0em  auto;
+    justify-content: center;
+    display: flex;
+    padding: .5em;
+    background-color: #5f4b44;
+    list-style-type: none;
+    border-radius: .2em;
+  }
+  
 
 .input-container input {
     background-color: khaki;
     border: 0;
     width: 200px;
     height: 50px;
-    padding: 0 20px;
+    padding: 0 .5em;
     margin: 20px;
     font-size: 18px;
     border-radius: 10px;
@@ -49,26 +82,26 @@ body {
     height: 40px;
     margin: 20px auto;
     border-radius: 10px;
+    position: relative;
+    
 }
 
-.item-container p {
-    padding: 10px;
-    position: relative;
-}
 
 .item-container .edit-btn {
+    margin: 0;
     position: absolute;
-    right: -40px;
-    cursor: pointer;
-    font-size: 15px;
+    top: .5em;
+    right: 2.9em;
 }
 
 .item-container .delete-btn {
+    margin: 0;
     position: absolute;
-    right:-75px;
-    cursor: pointer;
-    font-size: 15px;
+    top: .5em;
+    right: 0.9em;
 }
+
+
 
 .list-container {
     display: flex;

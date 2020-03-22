@@ -1,0 +1,103 @@
+<!doctype html>
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  <style>
+    :root {
+      box-sizing: border-box;
+    }
+
+    *,
+    ::before,
+    ::after {
+      box-sizing: inherit;
+    }
+
+    body {
+      background-color: #709b90;
+      font-family: Helvetica, Arial, sans-serif;
+    }
+
+    body * + * {
+      margin-top: 1.5em;
+    }
+
+
+
+
+    .container {
+      max-width: 1080px;
+      margin: 0 auto;
+    }
+
+
+
+    .input-panel {
+      max-width: 800px;
+      margin: 1.0em  auto;
+      justify-content: center;
+      display: flex;
+      padding: .5em;
+      background-color: #5f4b44;
+      list-style-type: none;
+      border-radius: .2em;
+    }
+
+    .record-container {
+      max-width: 800px;
+      margin: 0 auto;
+     
+    }
+
+    .input-panel > .input-el {
+      margin-top: 0;
+    }
+
+    .input-panel > .input-el  + .input-el  {
+      margin-left: 1.5em;
+    }
+
+    .record {
+      background-color: #fff;
+      text-align: center;
+      padding: .2em;
+      position: relative;
+    }
+    .record i {
+      position: absolute;
+      top: .1em;
+      right: 0.9em;
+    }
+
+    .record  + .record  {
+      margin-bottom:  .5em;
+    }
+
+
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="input-panel">
+        <input class="input-el" id="username" type="text" name="username"/>
+        <button class="input-el" type="submit">Submit</button>
+      </div>
+      <main class="record-container">
+        <div class="record">
+          cxazc
+          <div>
+            <i class="fa fa-trash-o"></i>
+          </div>
+        </div>
+        <div class="record">
+          cxazcfdsfgs
+          <div>
+            <i class="fa fa-trash-o"></i>
+          </div>
+          
+        </div>
+      
+      
+     </main>
+  </div>
+</body>
